@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="common_spacing">8dp</dimen>
+    <dimen name="image_padding">8dp</dimen>
+    <dimen name="elevation">8dp</dimen>
+    <dimen name="coordinates_space">8dp</dimen>
+    <dimen name="header_size">50dp</dimen>
+
+    <dimen name="icon_button_min_size">48dp</dimen>
+
+</resources>

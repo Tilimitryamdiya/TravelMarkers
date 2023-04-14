@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">TravelMarkers</string>
+
+    <string name="permission_request">Location permission required</string>
+
+    <string name="empty_name">"Name is empty"</string>
+
+    <string name="search">Search</string>
+    <string name="bookmarks">Bookmarks</string>
+    <string name="map">Map</string>
+    <string name="add">Add</string>
+
+    <string name="add_bookmark">Add bookmark</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete">Delete</string>
+    <string name="confirm_delete">Delete bookmark?</string>
+
+
+    <string name="title">Name</string>
+    <string name="address">Coordinates</string>
+    <string name="description">Description</string>
+    <string name="latitude">latitude:</string>
+    <string name="longitude">longitude:</string>
+    <string name="user_location">User location</string>
+    <string name="edit">Edit</string>
+    <string name="zoom_in">Zoom in</string>
+    <string name="zoom_out">Zoom out</string>
+    <string name="place_pin">Place pin</string>
+    <string name="image_pin">Image pin</string>
+    <string name="bookmark_menu">Bookmark menu</string>
+
+
+</resources>
