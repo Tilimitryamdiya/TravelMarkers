@@ -21,14 +21,15 @@ import ru.netology.travelmarkers.ui.AddBookmarkFragment.Companion.LONG_KEY
 import ru.netology.travelmarkers.viewmodel.BookmarksViewModel
 
 class BookmarksFragment : Fragment(R.layout.fragment_bookmarks) {
-
+    private var _binding: FragmentBookmarksBinding? = null
+    private val binding get() = _binding!!
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
 
-        val binding = FragmentBookmarksBinding.inflate(inflater, container, false)
+        _binding = FragmentBookmarksBinding.inflate(inflater, container, false)
         val viewModel by viewModels<BookmarksViewModel>()
 
         val adapter = BookmarksAdapter(object : Listener {
@@ -69,5 +70,10 @@ class BookmarksFragment : Fragment(R.layout.fragment_bookmarks) {
         }
 
         return binding.root
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
     }
 }

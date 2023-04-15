@@ -44,6 +44,10 @@ android {
 
 dependencies {
 
+//  LeakCanary to detect leaks
+    def leakcanary_version="2.10"
+    debugImplementation "com.squareup.leakcanary:leakcanary-android:$leakcanary_version"
+
     def core_version = "1.9.0"
     def appcompat_version = "1.6.1"
     def mdc_version = "1.8.0"

@@ -21,7 +21,9 @@ class AddBookmarkFragment : Fragment() {
         const val ID_BOOKMARK = "ID_BOOKMARK"
     }
 
-    lateinit var binding: FragmentAddBookmarkBinding
+    private var _binding: FragmentAddBookmarkBinding? = null
+    private val binding get() = _binding!!
+
     private val viewModel: BookmarksViewModel by activityViewModels()
 
     override fun onCreateView(
@@ -29,7 +31,7 @@ class AddBookmarkFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        binding = FragmentAddBookmarkBinding.inflate(inflater, container, false)
+        _binding = FragmentAddBookmarkBinding.inflate(inflater, container, false)
 
         val latitude = requireArguments().getDouble(LAT_KEY)
         val longitude = requireArguments().getDouble(LONG_KEY)
@@ -78,5 +80,10 @@ class AddBookmarkFragment : Fragment() {
         }
 
         return binding.root
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
     }
 }
